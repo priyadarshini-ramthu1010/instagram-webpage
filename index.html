@@ -3,60 +3,145 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Instagram Clone</title>
+  <title>YouTube Clone</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="page-layout">
-    <div class="container page-grid">
-      <section class="hero-panel">
-        <div class="brand-bar">
-          <div class="brand-badge" aria-hidden="true">
-            <span>IG</span>
-          </div>
-          <p class="brand-text">Instagram</p>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="topbar-left">
+        <button class="icon-button" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="logo">
+          <span class="logo-icon">▶</span>
+          <span class="logo-text">YouTube</span>
+        </div>
+      </div>
+
+      <div class="search-bar">
+        <input type="search" placeholder="Search" aria-label="Search" />
+        <button class="button button--search" type="button">Search</button>
+      </div>
+
+      <div class="topbar-right">
+        <button class="icon-button icon-button--circle" aria-label="Create">
+          <span>＋</span>
+        </button>
+        <button class="icon-button icon-button--circle" aria-label="Notifications">
+          <span>🔔</span>
+        </button>
+        <div class="avatar" aria-label="User profile">P</div>
+      </div>
+    </header>
+
+    <div class="content-grid">
+      <aside class="sidebar">
+        <nav class="sidebar-nav">
+          <a href="#" class="sidebar-link active">Home</a>
+          <a href="#" class="sidebar-link">Shorts</a>
+          <a href="#" class="sidebar-link">Subscriptions</a>
+        </nav>
+
+        <div class="sidebar-section">
+          <p class="sidebar-title">Library</p>
+          <a href="#" class="sidebar-link">History</a>
+          <a href="#" class="sidebar-link">Your Videos</a>
+          <a href="#" class="sidebar-link">Watch Later</a>
         </div>
 
-        <div class="hero-copy">
-          <h1>See everyday moments from your <span>close friends</span>.</h1>
-          <p>Share photos and videos with the people who matter most, and explore stories from friends in one place.</p>
+        <div class="sidebar-section">
+          <p class="sidebar-title">More from YouTube</p>
+          <a href="#" class="sidebar-link">Music</a>
+          <a href="#" class="sidebar-link">Gaming</a>
+          <a href="#" class="sidebar-link">Live</a>
         </div>
+      </aside>
 
-        <div class="photo-collage" aria-hidden="true">
-          <div class="photo-card photo-card--back"></div>
-          <div class="photo-card photo-card--middle"></div>
-          <div class="photo-card photo-card--front"></div>
-          <div class="collage-badge"></div>
-        </div>
-      </section>
+      <main class="main-content">
+        <section class="category-bar" aria-label="Video categories">
+          <button class="chip active">All</button>
+          <button class="chip">Music</button>
+          <button class="chip">Gaming</button>
+          <button class="chip">News</button>
+          <button class="chip">Movies</button>
+          <button class="chip">Learning</button>
+        </section>
 
-      <section class="auth-panel">
-        <div class="login-card">
-          <h2>Log into Instagram</h2>
-          <form>
-            <label class="field">
-              <input type="text" placeholder="Mobile number, username or email" />
-            </label>
-            <label class="field">
-              <input type="password" placeholder="Password" />
-            </label>
-            <button type="submit" class="button button--primary">Log in</button>
-          </form>
+        <section class="video-grid" aria-label="Recommended videos">
+          <article class="video-card">
+            <div class="thumbnail"></div>
+            <div class="video-info">
+              <div class="avatar avatar--small">Y</div>
+              <div>
+                <h3>Designing a beautiful landing page in 2026</h3>
+                <p>UI Studio • 2.1M views • 3 days ago</p>
+              </div>
+            </div>
+          </article>
 
-          <p class="forgot-link">Forgot password?</p>
+          <article class="video-card">
+            <div class="thumbnail thumbnail--alt"></div>
+            <div class="video-info">
+              <div class="avatar avatar--small">S</div>
+              <div>
+                <h3>Responsive CSS Grid tutorial</h3>
+                <p>Code Academy • 872K views • 1 week ago</p>
+              </div>
+            </div>
+          </article>
 
-          <div class="divider"><span>OR</span></div>
+          <article class="video-card">
+            <div class="thumbnail thumbnail--alt2"></div>
+            <div class="video-info">
+              <div class="avatar avatar--small">T</div>
+              <div>
+                <h3>Top 10 web design trends this year</h3>
+                <p>TrendTalk • 1.4M views • 5 days ago</p>
+              </div>
+            </div>
+          </article>
 
-          <button class="button button--facebook" type="button">Log in with Facebook</button>
-          <button class="button button--outline" type="button">Create new account</button>
+          <article class="video-card">
+            <div class="thumbnail thumbnail--alt3"></div>
+            <div class="video-info">
+              <div class="avatar avatar--small">V</div>
+              <div>
+                <h3>How to build a homepage with HTML & CSS</h3>
+                <p>DevChannel • 530K views • 2 weeks ago</p>
+              </div>
+            </div>
+          </article>
 
-          <p class="meta-brand"><span class="meta-icon" aria-hidden="true"></span>Meta</p>
-        </div>
-      </section>
+          <article class="video-card">
+            <div class="thumbnail thumbnail--alt4"></div>
+            <div class="video-info">
+              <div class="avatar avatar--small">M</div>
+              <div>
+                <h3>Quick tips for productive workflows</h3>
+                <p>Life Hacks • 980K views • 6 days ago</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="thumbnail thumbnail--alt5"></div>
+            <div class="video-info">
+              <div class="avatar avatar--small">C</div>
+              <div>
+                <h3>New music video releases you should watch</h3>
+                <p>MusicLab • 3.8M views • 1 day ago</p>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
     </div>
-  </main>
+  </div>
 </body>
 </html>
